@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advisory Board — The Pop-Up Journal Initiative</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="advisory-board-page">
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="header-logo-home">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Pop-Up Journal Initiative - Home" class="header-logo">
+                    </a>
+                </div>
+                <div class="header-text">
+                    <h1>The Pop-Up Journal Initiative</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-sweep">
+        <svg viewBox="0 0 1440 25" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 L0,22 C400,22 1000,3 1440,3 L1440,0 Z" fill="#C8D8D5"/>
+            <path d="M0,22 C400,22 1000,3 1440,3" stroke="#b8cac7" stroke-width="1" fill="none"/>
+        </svg>
+    </div>
+
+    <div class="nav-container">
+        <nav>
+            <div class="container">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+                <ul id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="griliches.html">The Griliches Question</a></li>
+                    <li><a href="advisory-board.html" class="active">Advisory Board</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="nav-bottom-sweep">
+            <svg viewBox="0 0 1440 22" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,0 L0,3 C440,3 1000,22 1440,22 L1440,0 Z" fill="rgba(255,255,255,0.98)"/>
+                <path d="M0,3 C440,3 1000,22 1440,22" stroke="#C8D8D5" stroke-width="1.5" fill="none"/>
+            </svg>
+        </div>
+    </div>
+
+    <div>
+        <div class="container">
+         <div class="main-layout">
+            <main class="content">
+                <section>
+                    <h2>Advisory Board</h2>
+                    <p>The members of our Advisory Board conduct rigorous research on some of the most important policy questions of our time. In order to translate that research to real-world impact, they've spent their careers building bridges between researchers and decision-makers.</p>
+                    <p>We're proud to have their guidance as we launch the Pop-Up Journal Initiative.</p>
+
+                    <div class="board-grid">
+                        <div class="board-member">
+                            <div class="member-photo"><img src="Elmendorf_Headshot.jpg"></div>
+                            <h3 class="member-name">Douglas Elmendorf</h3>
+                            <p class="member-title">Professor of Public Policy, Harvard University</p>
+                            <div class="bio-full">
+                                <p>Douglas Elmendorf is a professor of public policy at Harvard University’s Kennedy School of Government. He was named dean of the Kennedy School in June 2015 and stepped down from that role in June 2024. He had served previously as director of the US Congressional Budget Office from January 2009 through March 2015.</p>
+                                <p>Earlier, Doug had been a senior fellow at the Brookings Institution, assistant director of the Division of Research and Statistics at the Federal Reserve Board, deputy assistant secretary for economic policy at the US Treasury Department, senior economist at the White House’s Council of Economic Advisers, and assistant professor at Harvard University. In those positions, he worked on budget policy, monetary policy, macroeconomic analysis and forecasting, health care, Social Security, income security programs, financial markets, and other topics. He earned his PhD and AM in economics from Harvard University and his AB summa cum laude from Princeton University.</p>
+                            </div>
+                            <button class="expand-btn" onclick="openBioModal(this)">Read More</button>
+                        </div>
+
+                        <div class="board-member">
+                            <div class="member-photo"><img src="Gayer_Headshot.jpg"></div>
+                            <h3 class="member-name">Ted Gayer</h3>
+                            <p class="member-title">President, Niskansen Center</p>
+                            <div class="bio-full">
+                                <p>Ted Gayer is President of the Niskanen Center. He previously worked at the Brookings Institution, where he was Co-Director of the Economic Studies program from 2009 to 2013, Vice President and Director of the Economic Studies program from 2013 to 2018, and Executive Vice President from 2018 to 2022.</p>
+                                <p>Before joining Brookings, Gayer was an Assistant Professor at Georgetown University from 1997 to 2003 and an Associate Professor from 2003 to 2009. From 2007 to 2008, he was Deputy Assistant Secretary for Economic Policy at the Department of the Treasury, and from 2003 to 2004, he was Senior Economist at the President’s Council of Economic Advisers.</p>
+                                <p>Gayer was a Visiting Fellow at the Public Policy Institute of California from 2006 to 2007 and a Visiting Scholar at the American Enterprise Institute from 2004 to 2006. He has written extensively on economic issues, focusing on public finance, environmental and energy economics, housing, and regulatory policy.</p>
+                            </div>
+                            <button class="expand-btn" onclick="openBioModal(this)">Read More</button>
+                        </div>
+
+                        <div class="board-member">
+                            <div class="member-photo"><img src="Haskel_Headshot.jpg"></div>
+                            <h3 class="member-name">Jonathan Haskel</h3>
+                            <p class="member-title">Professor of Economics, Imperial College Business School</p>
+                            <div class="bio-full">
+                                <p>Jonathan Haskel is Professor of Economics at Imperial College Business School, Imperial College London and Director of the Doctoral Programme at the School. He was previously Professor and Head of Department at the Department of Economics, Queen Mary, University of London.  He has taught at the University of Bristol and London Business School and been a visiting professor at the Tuck School of Business, Dartmouth College; Stern School of Business, New York University; and visiting researcher at the Australian National University.</p>
+                                <p>He has been on the editorial boards of <em>Economica</em>, the <em>Journal of Industrial Economics</em> and <em>Economic Policy</em>. His research interests are productivity, innovation, intangible investment, and growth. He is the author, with Stian Westlake, of <em>Capitalism Without Capital</em>, Princeton University Press. He obtained his BSc at the University of Bristol and his PhD at the London School of Economics.</p>
+                            </div>
+                            <button class="expand-btn" onclick="openBioModal(this)">Read More</button>
+                        </div>
+
+
+                        <div class="board-member">
+                            <div class="member-photo"><img src="Levi_Headshot.jpg"></div>
+                            <h3 class="member-name">Margaret Levi</h3>
+                            <p class="member-title">Professor Emerita of Political Science, Stanford University</p>
+                            <div class="bio-full">
+                                <p>Margaret Levi is Professor Emerita of Political Science, Senior Fellow of the Center for Democracy, Development and Rule of Law (CDDRL), and co-director of Ethics and Society Review at Stanford University; and Bacharach Professor Emerita at the University of Washington. A past president of the American Political Science Association, she was the Sara Miller McCune Director of the <a href="https://casbs.stanford.edu/">Center for Advanced Study in the Behavioral Sciences (CASBS)</a>.</p>
+                                <p>Awarded the <a href="http://www.skytteprize.com/">2019 Johan Skytte Prize</a>, <a href="https://falling-walls.com/social-sciences-and-humanities/">2020 Falling Walls Breakthrough</a>, and an honorary doctorate of Universidad Carlos III de Madrid, she is in the <a href="https://humsci.stanford.edu/feature/three-stanford-faculty-members-elected-british-academy">National Academy of Sciences</a>, the British Academy, the American Academy of Arts and Sciences, and the American Philosophical Society. The author of eight books and numerous articles, she studies trustworthy governance and cooperative behavior in the interest of others.</p></p>
+                            </div>
+                            <button class="expand-btn" onclick="openBioModal(this)">Read More</button>
+                        </div>
+
+                        <div class="board-member">
+                            <div class="member-photo"><img src="Niehaus_Headshot.jpg"></div>
+                            <h3 class="member-name">Paul Niehaus</h3>
+                            <p class="member-title">Chair of Economics, UC San Diego</p>
+                            <!-- <p class="member-title">Co-Founder, GiveDirectly</p> -->
+                            <div class="bio-full">
+                                <p>Paul Niehaus is an economist and entrepreneur working to accelerate the end of extreme poverty.</p>
+                                <p>He is Chancellor's Associates Endowed Chair in Economics at UC San Diego and an affiliate of BREAD, CEGA, J-PAL, and the NBER. His research examines the design, implementation, and impact of anti-poverty programs at large scales.</p>
+                                <p>He is also co-founder of a series of companies working to amplify capital flows to emerging markets. He is co-founder, former president, and current director at GiveDirectly, the leading international NGO specialized in digital cash transfers and consistently rated one of the most impactful ways to give. He subsequently co-founded and served as a director of the enterprise payments company Segovia and the digital remittance company Taptap Send.</p>
+                                <p>Paul has received a Sloan Fellowship and a Frisch Medal, and has been named a "Top 100 Global Thinker" by Foreign Policy magazine and one of Vox's "Future Perfect 50." He holds a PhD in economics from Harvard University.</p>
+                            </div>
+                            <button class="expand-btn" onclick="openBioModal(this)">Read More</button>
+                        </div>
+
+                        <div class="board-member">
+                            <div class="member-photo"><img src="Williams_Headshot.jpg"></div>
+                            <h3 class="member-name">Heidi Williams</h3>
+                            <p class="member-title">Professor of Economics and Public Affairs, Dartmouth College</p>
+                            <div class="bio-full">
+                                <p>
+                                    Heidi Williams is the Orville E. Dryfoos Professor in Economics and Public Affairs at <a href="https://home.dartmouth.edu/">Dartmouth College</a>. Her teaching and research focus on understanding how policy changes affect innovation, productivity, and economic growth. Heidi is a Research Associate at the <a href="https://www.nber.org/">National Bureau of Economic Research</a> (NBER), and, together with <a href="https://www.kellogg.northwestern.edu/faculty/jones-ben/htm/research.htm">Ben Jones</a>, she co-directs the NBER's <a href="https://www.nber.org/programs-projects/programs-working-groups%23Groups/innovation-policy?page=1&amp;perPage=50">Innovation Policy</a> working group. She is currently lead editor of the <a href="https://www.aeaweb.org/journals/jep"><i>Journal of Economic Perspectives</i></a>, and works part-time at the Congressional Budget Office.
+                                </p>
+                                <p>
+                                    Heidi is Director of Science Policy at the <a href="https://progress.institute/">Institute for Progress</a> and a nonresident senior fellow at the <a href="https://www.brookings.edu/centers/the-hutchins-center-on-fiscal-and-monetary-policy/">Hutchins Center on Fiscal and Monetary Policy</a> at <a href="https://www.brookings.edu/">Brookings</a>. Together with <a href="https://econweb.ucsd.edu/~pniehaus/">Paul Niehaus</a>, she co-chairs <a href="https://www.povertyactionlab.org/">J-PAL</a>’s <a href="https://www.povertyactionlab.org/initiative/science-progress-initiative">Science for Progress Initiative</a>. Heidi received her AB in mathematics from Dartmouth College in 2003, her MSc in development economics from Oxford University in 2004, and her PhD in economics from Harvard in 2010. She is a Fellow of the American Academy of Arts and Sciences and of the Econometric Society, and is the recipient of a MacArthur Foundation Fellowship (2015), an Alfred P. Sloan Research Fellowship (2015), and the ASHEcon Medal (2021). She has also been recognized for her undergraduate teaching, graduate teaching, and graduate advising.</p></p>
+                                </p>
+                            </div>
+                            <button class="expand-btn" onclick="openBioModal(this)">Read More</button>
+                        </div>
+                </section>
+            </main>
+        </div>
+        <div id="bioModal" class="bio-modal">
+            <div class="bio-modal-content">
+                <span class="bio-close" onclick="closeBioModal()">&times;</span>
+                <h3 id="modalName"></h3>
+                <p id="modalTitle"></p>
+                <div id="modalBio"></div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+        <div class="container">
+            <div class="footer-header">
+                <h3>Proudly Sponsored By</h3>
+            </div>
+            <div class="sponsors-grid">
+                <div class="sponsor coefficient-giving">
+                    <div class="sponsor-header">
+                        <img src="cg-logo.png" alt="Coefficient Giving" class="sponsor-logo-img">
+                    </div>
+                    <div class="sponsor-content">
+                        <p>Coefficient Giving is a philanthropic advisor and funder. Since our founding, we've directed over $4 billion in grants as part of our mission to help others as much as we can with the resources available to us. We invest an unusual amount of effort in selecting causes where philanthropic funding can have outsized leverage, and aim to balance evidence-based giving with ambitious bets on transformative opportunities.</p>
+                        <p>We work with a range of donors who share our commitment to cost-effective, high-impact giving; if you're interested in exploring how we can help maximize the impact of your philanthropy, we invite you to <a href="mailto:partnerwithus@coefficientgiving.org">connect with us</a>.</p>
+                    </div>
+                    <div class="sponsor-website-links">
+                        <a href="http://coefficientgiving.org" target="_blank">coefficientgiving.org</a>
+                        <a href="https://x.com/coeff_giving" target="_blank">@Coeff_Giving</a>
+                    </div>
+                </div>
+                <div class="sponsor sloan-foundation">
+                    <div class="sponsor-header">
+                        <img src="sloan-logo.png" alt="Coefficient Giving" class="sponsor-logo-img">
+                    </div>
+                    <div class="sponsor-content">
+                        <p>The Alfred P. Sloan Foundation is a not-for-profit, mission-driven grantmaking institution dedicated to improving the welfare of all through the advancement of scientific knowledge.</p><p>Established in 1934 by Alfred Pritchard Sloan Jr., then-President and Chief Executive Officer of the General Motors Corporation, the Foundation makes grants in four broad areas: direct support of research in science, technology, engineering, mathematics, and economics; initiatives to increase the quality, equity, and diversity of scientific institutions and the science workforce; projects to develop or leverage technology to empower research; and efforts to enhance and deepen public engagement with science and scientists.</p>
+                    </div>
+                    <div class="sponsor-website-links" text-align: center;>
+                        <a href="http://sloan.org" target="_blank">sloan.org</a>
+                        <a href="https://x.com/sloanfoundation" target="_blank">@SloanFoundation</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>The Pop-Up Journal Initiative is managed by Coefficient Giving and the Alfred P. Sloan Foundation. Copyright 2025.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // function showPage(pageId) {
+        //     // Hide all pages
+        //     document.querySelectorAll('.page').forEach(page => {
+        //         page.classList.remove('active');
+        //     });
+            
+        //     // Show selected page
+        //     document.getElementById(pageId).classList.add('active');
+            
+        //     // Update navigation active state
+        //     document.querySelectorAll('nav a').forEach(link => {
+        //         link.classList.remove('active');
+        //     });
+        //     event.target.classList.add('active');
+            
+        //     // Scroll to top
+        //     window.scrollTo(0, 0);
+        // }
+
+	    function toggleBio(button) {
+            const bioFull = button.previousElementSibling;
+            const bioPreview = bioFull.previousElementSibling;
+            
+            if (bioFull.classList.contains('expanded')) {
+                // Collapse
+                bioFull.classList.remove('expanded');
+                bioPreview.style.display = 'block';
+                button.textContent = 'Read More';
+                button.classList.remove('expanded');
+            } else {
+                // Expand
+                bioFull.classList.add('expanded');
+                bioPreview.style.display = 'none';
+                button.textContent = 'Read Less';
+                button.classList.add('expanded');
+            }
+        }
+
+        function openBioModal(button) {
+            const member = button.closest('.board-member');
+            const name = member.querySelector('.member-name').textContent;
+            const title = member.querySelector('.member-title').textContent;
+            const bio = member.querySelector('.bio-full').innerHTML;
+            
+            document.getElementById('modalName').textContent = name;
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalBio').innerHTML = bio;
+            document.getElementById('bioModal').style.display = 'block';
+        }
+
+        function closeBioModal() {
+            document.getElementById('bioModal').style.display = 'none';
+        }
+
+        // Optional: Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById('bioModal');
+            if (event.target == modal) {
+                closeBioModal();
+            }
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const targetPosition = target.offsetTop - 150; // 150px offset
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('show');
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('navMenu');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            
+            if (!toggle.contains(event.target) && !menu.contains(event.target)) {
+                menu.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>

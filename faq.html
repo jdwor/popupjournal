@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ — The Pop-Up Journal Initiative</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="faq-page">
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="header-logo-home">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Pop-Up Journal Initiative - Home" class="header-logo">
+                    </a>
+                </div>
+                <div class="header-text">
+                    <h1>The Pop-Up Journal Initiative</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-sweep">
+        <svg viewBox="0 0 1440 25" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 L0,22 C400,22 1000,3 1440,3 L1440,0 Z" fill="#C8D8D5"/>
+            <path d="M0,22 C400,22 1000,3 1440,3" stroke="#b8cac7" stroke-width="1" fill="none"/>
+        </svg>
+    </div>
+
+    <div class="nav-container">
+        <nav>
+            <div class="container">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+                <ul id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="griliches.html">The Griliches Question</a></li>
+                    <li><a href="advisory-board.html">Advisory Board</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="nav-bottom-sweep">
+            <svg viewBox="0 0 1440 22" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,0 L0,3 C440,3 1000,22 1440,22 L1440,0 Z" fill="rgba(255,255,255,0.98)"/>
+                <path d="M0,3 C440,3 1000,22 1440,22" stroke="#C8D8D5" stroke-width="1.5" fill="none"/>
+            </svg>
+        </div>
+    </div>
+
+    <div>
+        <div class="container">
+            <div class="main-layout">
+                <main class="content">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="highlight-box">
+                        If your question isn't answered below, reach out to <a href="mailto:info@popupjournal.com">info@popupjournal.com</a>.
+                    </div>
+
+                    <section id="concept-scope">
+                        <h2>Concept & Scope</h2>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Why a pop-up journal rather than a special issue?
+                            </div>
+                            <div class="faq-answer">
+                                <p>A pop-up journal's primary goal is to answer a specific, well-scoped question, rather than to assemble thematically related research. Accordingly, they have some unusual features:</p>
+                                    <ul>
+                                        <li>Accessible synthesis essays attempting to answer the question based on available evidence</li>
+                                        <li>Best guess estimates of quantitative answers to the question, with confidence intervals</li>
+                                        <li>Publication of work that is not typically published in conventional journals, like replication studies and descriptions of new datasets</li>
+                                        <li>Identification of important evidence gaps and proactive efforts to spur new research to fill them</li>
+                                    </ul>
+                                <p>Importantly, pop-up journals also recur over the course of several years. This enables researchers to conceive and execute original research projects with the goal of eventual inclusion in a pop-up journal issue; by contrast, special issues of traditional journals usually have a timeframe short enough that researchers need to have been working on the topic already in order to submit. Pop-up journals' recurrence also allows for the integration of new evidence into expert syntheses and best-guess answers, which provides a transparent window into how the state of knowledge is advancing over time.</p>
+                                <p>In general, we believe this model better aligns incentives to reduce uncertainty and provide actionable answers to the policymakers and decision-makers that need them.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Does the lead organization need to have expertise on the specific question?
+                            </div>
+                            <div class="faq-answer">
+                                <p>No. We seek strong project managers; disciplinary depth can derive from the Steering Committee. We expect the curator to primarily handle editorial and production responsibilities, while the Steering Committee sets research priorities, sources and curates issue content, and synthesizes the state of knowledge.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                How are pop-up journals organized and led?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Each pop-up journal is run by a host institution working in partnership with a Steering Committee of domain experts and prominent decisionmakers. The host organization handles editorial and production responsibilities, while the Steering Committee sets research priorities, sources and curates issue content, and synthesizes the state of knowledge. Domain experts who wish to be involved in leading or contributing to a pop-up journal are encouraged to reach out to <a href="mailto:info@popupjournal.com">info@popupjournal.com</a>.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                What is the expected composition and role of the Steering Committee?
+                            </div>
+                            <div class="faq-answer">
+                                <p>The Steering Committee should consist of roughly 5-10 members, and will include prominent scholars in the relevant field as well as prominent decisionmakers who expect to use the research results.</p>
+                                <p>The Steering Committee will set research priorities, source and curate issue content, and synthesize the state of knowledge. As such, members will be expected to critically evaluate the literature, and should be comfortable providing specific and actionable answers based on the available research and expressing those answers in the form of synthesis essays.</p>
+                                <p>The journal will have no ideological preconceptions, and the same standard will be applied to any research published therein.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                How many issues of the journal should be published over five years?
+                            </div>
+                            <div class="faq-answer">
+                                <p>We anticipate one issue per year, or less, will be appropriate to cover advances on the big question, but we don't have any specific requirement. The rate of publication will depend on the host organization's vision for the project.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                What constitutes an "issue" of a pop-up journal?
+                            </div>
+                            <div class="faq-answer">
+                                <p>This will be determined at least in part by the vision of the curator. At a high level, we expect an issue to bundle 5-10 contributions (e.g. papers, commentaries, replication reports, datasets, dashboards) and an accessibly written expert assessment of the state of knowledge.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Will the curator hand out research grants?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Primary research support will be available from outside funders. We expect the journal's steering committee to identify gaps, encourage the pursuit of relevant projects, and bring opportunities to the attention of the outside funders for support.</p>
+                                <p>While we do not require the curator to directly award grants for research, a portion of the budget can be allocated to seed grants for situations in which the curator identifies a time-sensitive, high-leverage need that can be addressed with a small grant.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Can certain roles be outsourced?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes &ndash; sub&#8209;contracts are fine. We ask that vendors are identified and due diligence is summarised.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Can host institutions use their own branding?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Co&#8209;branding is fine as long as the Pop&#8209;Up identity is prominent and outputs remain open&#8209;access.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="funding-mechanics">
+                        <h2>Funding</h2>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                How much funding is available for each journal?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Funding for each pop-up journal is provided jointly by the initiative's sponsors. Budgets will generally be in the range of several hundred thousand to over one million dollars, covering both the curation contract and the funding of primary research. Specific amounts will vary depending on the scope and question of each journal.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                What costs are allowable?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Funds can be used for a range of relevant activities: direct labor, subcontracted editorial or technical support, steering&#8209;committee honoraria, DOI/archiving fees, replication contracts, modest travel, seed grants, etc.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="evaluation-selection">
+                        <h2>Evaluation & Selection</h2>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                What criteria are used to select host organizations?
+                            </div>
+                            <div class="faq-answer">
+                                <p>No single factor dominates. We expect to base decisions on:</p>
+                                <ul>
+                                    <li>Vision for the pop-up journal format</li>
+                                    <li>Ability to recruit outstanding experts</li>
+                                    <li>A track record of executing projects in a timely fashion</li>
+                                    <li>A professional reputation for impartiality, rigor, and expertise</li>
+                                    <li>Budget</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Are host organizations expected to secure a steering committee in advance?
+                            </div>
+                            <div class="faq-answer">
+                                <p>A complete steering committee does not need to be assembled in advance, as final selection may be undertaken in partnership with the funders and the Advisory Board once the host has been selected. However, the steering committee is perhaps the single most important element for the success of the initiative, so prospective hosts should be prepared to identify people who would be prioritized for recruitment into committee chair or membership roles.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Who reviews proposals?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Proposals are reviewed by the <a href="advisory-board.html">Advisory Board</a>, as well as staff from the initiative's sponsoring organizations.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Who can host a pop-up journal?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Any academic, non&#8209;profit, or for&#8209;profit entity is welcome if it can demonstrate plans and capabilities commensurate with the relevant tasks. This includes professional societies, repositories, libraries, publishers, research organizations, etc.</p>
+                                <p>Consortia are also welcome; simply name one lead organization to sign and manage the contract. This opportunity is not restricted to US-based organizations, but selection is conditional on the completion of legal due diligence.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="abundance-journals">
+                        <h2>An Abundance of Pop-Up Journals</h2>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Is this going to be the only pop-up journal?
+                            </div>
+                            <div class="faq-answer">
+                                <p>No. The <a href="griliches.html">Griliches Question journal</a> is the first in a planned series, and is already in the process of launching. We hope to see this model taken up more broadly across topics and funders.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                If an organization hosts one pop-up journal, can it host another?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes. Prior hosts remain eligible for later pop&#8209;up journals. Performance on earlier journals will weigh positively but not exclusively in future rounds.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                How will popupjournal.com relate to an individual journal's website?
+                            </div>
+                            <div class="faq-answer">
+                                <p><em>popupjournal.com</em> is the home base for the initiative, rather than for any given pop-up journal. Each host may maintain its own branded site or use an existing platform.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                I am a funder interested in the pop-up journal model; how can I get involved?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Email us at <a href="mailto:info@popupjournal.com">info@popupjournal.com</a>! If you would like to run your own pop-up journal on a question of key interest to you or your stakeholders, we are happy to spread the word or share advice, resources, and contacts.</p>
+                                <p>Or, if you would like to get involved as a partner in the existing iterations, we would be excited to discuss options.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="intellectual-property">
+                        <h2>Intellectual Property & Openness</h2>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Who owns what?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Authors retain copyright to individual papers. Curator outputs (issues, datasets, code) should use CC&#8209;BY 4.0 or similarly permissive licences.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                Are there data & code expectations?
+                            </div>
+                            <div class="faq-answer">
+                                <p>Components of pop-up journal issues are expected to be open by default, with replication&#8209;ready data and code stored in a public repository.</p>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+
+                <aside class="toc">
+                    <h3>Table of Contents</h3>
+                    <ul>
+                        <li><a href="#concept-scope">Concept & Scope</a></li>
+                        <li><a href="#funding-mechanics">Funding</a></li>
+                        <li><a href="#evaluation-selection">Evaluation & Selection</a></li>
+                        <li><a href="#abundance-journals">An Abundance of Pop-Up Journals</a></li>
+                        <li><a href="#intellectual-property">Intellectual Property & Openness</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-header">
+                <h3>Proudly Sponsored By</h3>
+            </div>
+            <div class="sponsors-grid">
+                <div class="sponsor coefficient-giving">
+                    <div class="sponsor-header">
+                        <img src="cg-logo.png" alt="Coefficient Giving" class="sponsor-logo-img">
+                    </div>
+                    <div class="sponsor-content">
+                        <p>Coefficient Giving is a philanthropic advisor and funder. Since our founding, we've directed over $4 billion in grants as part of our mission to help others as much as we can with the resources available to us. We invest an unusual amount of effort in selecting causes where philanthropic funding can have outsized leverage, and aim to balance evidence-based giving with ambitious bets on transformative opportunities.</p>
+                        <p>We work with a range of donors who share our commitment to cost-effective, high-impact giving; if you're interested in exploring how we can help maximize the impact of your philanthropy, we invite you to <a href="mailto:partnerwithus@coefficientgiving.org">connect with us</a>.</p>
+                    </div>
+                    <div class="sponsor-website-links">
+                        <a href="http://coefficientgiving.org" target="_blank">coefficientgiving.org</a>
+                        <a href="https://x.com/coeff_giving" target="_blank">@Coeff_Giving</a>
+                    </div>
+                </div>
+                <div class="sponsor sloan-foundation">
+                    <div class="sponsor-header">
+                        <img src="sloan-logo.png" alt="Alfred P. Sloan Foundation" class="sponsor-logo-img">
+                    </div>
+                    <div class="sponsor-content">
+                        <p>The Alfred P. Sloan Foundation is a not-for-profit, mission-driven grantmaking institution dedicated to improving the welfare of all through the advancement of scientific knowledge.</p>
+                        <p>Established in 1934 by Alfred Pritchard Sloan Jr., then-President and Chief Executive Officer of the General Motors Corporation, the Foundation makes grants in four broad areas: direct support of research in science, technology, engineering, mathematics, and economics; initiatives to increase the quality, equity, and diversity of scientific institutions and the science workforce; projects to develop or leverage technology to empower research; and efforts to enhance and deepen public engagement with science and scientists.</p>
+                    </div>
+                    <div class="sponsor-website-links">
+                        <a href="http://sloan.org" target="_blank">sloan.org</a>
+                        <a href="https://x.com/sloanfoundation" target="_blank">@SloanFoundation</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>The Pop-Up Journal Initiative is managed by Coefficient Giving and the Alfred P. Sloan Foundation. Copyright 2025.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const isActive = element.classList.contains('active');
+
+            // Close all other FAQs
+            document.querySelectorAll('.faq-question.active').forEach(q => {
+                q.classList.remove('active');
+                q.nextElementSibling.classList.remove('active');
+            });
+
+            // Toggle current FAQ
+            if (!isActive) {
+                element.classList.add('active');
+                answer.classList.add('active');
+            }
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const targetPosition = target.offsetTop - 200;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id], h2[id], h3[id]');
+            const tocLinks = document.querySelectorAll('.toc a');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionId = section.getAttribute('id');
+
+                if (window.scrollY >= (sectionTop - 300)) {
+                    current = sectionId;
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                const linkHref = link.getAttribute('href');
+                if (linkHref === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('show');
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('navMenu');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+
+            if (!toggle.contains(event.target) && !menu.contains(event.target)) {
+                menu.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
