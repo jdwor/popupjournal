@@ -38,8 +38,8 @@ h1, h2, h3, .member-name, .footer-header h3 {
 
 /* Header */
 header {
-    background: #C8D8D5;
-    color: var(--text-primary);
+    background: var(--color-primary);
+    color: var(--text-on-dark);
     padding: 28px 0 22px;
 }
 
@@ -55,7 +55,7 @@ header {
     font-weight: 400;
     margin-bottom: 0px;
     line-height: 1.1;
-    color: var(--text-primary);
+    color: var(--text-on-dark);
 }
 
 .header-logo {
