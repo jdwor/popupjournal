@@ -1235,6 +1235,7 @@ footer {
 
     body {
         font-size: 1rem;
+        overflow-x: hidden;
     }
 
     header {
@@ -1449,6 +1450,11 @@ footer {
 
     .sponsor-website-links {
         flex-wrap: wrap;
+    }
+
+    .sponsor-logo-img {
+        max-width: 100%;
+        height: auto;
     }
 
 }
