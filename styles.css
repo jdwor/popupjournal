@@ -2,14 +2,15 @@
 :root {
     --color-primary: #064D49;
     --color-primary-light: #C8D8D5;
-    --color-bg-cool: #F2F8FF;
-    --color-bg-warm: #F6F6F6;
-    --color-border: #ECECEC;
-    --color-border-dark: #D7D7D7;
+    --color-bg-cool: #FAF8F5;
+    --color-bg-warm: #F4F2EF;
+    --color-border: #E8E6E3;
+    --color-border-dark: #D7D5D2;
     --text-primary: #1a1a1a;
     --text-secondary: #606060;
     --text-on-dark: #ffffff;
     --text-on-dark-muted: #C8D8D5;
+    --font-mono: 'IBM Plex Mono', monospace;
 }
 
 * {
@@ -28,6 +29,10 @@ body {
 
 h1, h2, h3, .member-name, .footer-header h3 {
     font-family: 'DM Serif Display', Georgia, serif;
+}
+
+.step-number, .status-badge, .section-label {
+    font-family: var(--font-mono);
 }
 
 .container {
@@ -160,6 +165,33 @@ nav a.active {
     font-weight: 500;
 }
 
+nav a.active::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -6px;
+    width: 20px;
+    height: 14px;
+    transform: translateX(-50%);
+    pointer-events: none;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 4,2 C 8,2.5 12,1.5 16,2' stroke='%23C8D8D5' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M 10,2 C 10.2,7 9.8,10 10,13' stroke='%23C8D8D5' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
+    background-size: 100% 100%;
+}
+
+nav a.active::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 20px;
+    height: 14px;
+    transform: translateX(-50%);
+    pointer-events: none;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 10,1 C 10.2,4 9.8,7 10,12' stroke='%23C8D8D5' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M 4,12 C 8,12.5 12,11.5 16,12' stroke='%23C8D8D5' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center;
+    background-size: 100% 100%;
+}
+
+
 /* Page Title */
 .page-title-section {
     padding: 20px 0 10px;
@@ -196,7 +228,7 @@ main {
 .content h2 {
     font-size: 2.6rem;
     color: var(--text-primary);
-    margin: 80px 0 30px 0;
+    margin: 60px 0 25px 0;
     font-weight: 400;
     border-bottom: 2px solid var(--color-primary-light);
     padding-bottom: 10px;
@@ -207,14 +239,14 @@ main {
 .content h3 {
     font-size: 1.5rem;
     color: var(--text-primary);
-    margin: 40px 0 20px 0;
+    margin: 30px 0 15px 0;
     font-weight: 400;
     scroll-margin-top: 200px;
 }
 
 .content p {
     font-size: 1.1rem;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
     color: var(--text-primary);
 }
 
@@ -244,9 +276,9 @@ main {
     display: inline-block;
     background: var(--color-primary);
     color: var(--text-on-dark);
-    padding: 18px 40px;
+    padding: 14px 32px;
     text-decoration: none;
-    border-radius: 0px;
+    border-radius: 3px;
     font-weight: 400;
     font-size: 0.9rem;
     letter-spacing: 0.05em;
@@ -582,9 +614,9 @@ main {
 footer {
     background: var(--color-primary);
     color: var(--text-on-dark);
-    padding: 60px 0 50px;
+    padding: 50px 0 40px;
     position: relative;
-    margin-top: 100px;
+    margin-top: 70px;
     border-top: 3px solid var(--color-primary-light);
 }
 
@@ -594,7 +626,7 @@ footer {
 
 .footer-header {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .footer-header h3 {
@@ -612,7 +644,7 @@ footer {
 .sponsors-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
+    gap: 50px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -657,6 +689,10 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.coefficient-giving .sponsor-logo-img {
+    max-width: 180px;
 }
 
 .open-philanthropy .sponsor-logo {
@@ -724,9 +760,9 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    margin-top: 60px;
+    margin-top: 45px;
     width: 100%;
-    margin: 60px auto 0 auto;
+    margin: 45px auto 0 auto;
 }
 
 .board-member {
@@ -815,8 +851,8 @@ footer {
     background: var(--color-primary);
     color: var(--text-on-dark);
     border: none;
-    padding: 12px 30px;
-    border-radius: 0px;
+    padding: 12px 28px;
+    border-radius: 3px;
     font-size: 0.9rem;
     font-weight: 400;
     letter-spacing: 0.05em;
@@ -859,10 +895,17 @@ footer {
         order: unset;
     }
 
-    .steps-grid {
+    .how-it-works-layout {
         grid-template-columns: 1fr;
         gap: 30px;
-        max-width: 100%;
+    }
+
+    .how-it-works-header .section-heading {
+        position: static;
+    }
+
+    .journal-feature {
+        margin-left: 0;
     }
 
     .involve-grid {
@@ -953,7 +996,7 @@ footer {
 /* Hero Section */
 .hero {
     padding: 100px 0 90px;
-    background: var(--color-bg-cool);
+    background: #ECF1EE;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -993,6 +1036,19 @@ footer {
     margin: 0 auto;
 }
 
+.hero-link {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    display: inline;
+    transition: color 0.3s ease;
+}
+
+.hero-link:hover {
+    color: var(--text-primary);
+}
+
+
 /* Section Dividers */
 .section-divider {
     width: 100%;
@@ -1009,58 +1065,68 @@ footer {
 /* How It Works Section */
 .how-it-works {
     background: #ffffff;
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
-.how-it-works .section-heading {
-    text-align: center;
+.how-it-works-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.how-it-works-header .section-heading {
     font-family: 'DM Serif Display', Georgia, serif;
     font-size: 2.4rem;
     font-weight: 400;
     color: var(--text-primary);
-    margin-bottom: 60px;
+    margin: 0;
+    position: sticky;
+    top: 120px;
 }
 
-.steps-grid {
+.steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.step-item {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 30px;
+    grid-template-columns: 48px 1fr;
+    gap: 24px;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--color-border);
 }
 
-.step-card {
-    text-align: center;
-    padding: 35px 30px;
-    background: #ffffff;
-    border: 1px solid var(--color-border);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+.step-item:first-child {
+    padding-top: 0;
+}
+
+.step-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 .step-number {
-    width: 48px;
-    height: 48px;
-    background: var(--color-primary);
-    color: var(--text-on-dark);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
+    font-size: 0.85rem;
     font-weight: 500;
-    margin: 0 auto 20px;
+    color: var(--color-primary);
+    padding-top: 5px;
+    letter-spacing: 0.05em;
 }
 
-.step-card h3 {
+.step-content h3 {
     font-family: 'DM Serif Display', Georgia, serif;
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--text-primary);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
-.step-card p {
+.step-content p {
     font-size: 1.05rem;
     color: var(--text-secondary);
     line-height: 1.7;
@@ -1068,46 +1134,38 @@ footer {
 
 /* Current Journals Section */
 .current-journals {
-    padding: 80px 0;
+    padding: 60px 0;
     background: var(--color-bg-warm);
 }
 
-.current-journals .section-heading {
-    text-align: center;
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 2.4rem;
-    font-weight: 400;
-    color: var(--text-primary);
-    margin-bottom: 50px;
+.section-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
 }
 
-.journal-card {
-    background: #ffffff;
-    border: 1px solid var(--color-border);
+.journal-feature {
+    max-width: 700px;
+    margin-left: 60px;
     border-left: 4px solid var(--color-primary);
-    padding: 50px;
-    max-width: 800px;
-    margin: 0 auto;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-    transition: box-shadow 0.3s ease;
+    padding-left: 40px;
 }
 
-.journal-card:hover {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-}
-
-.journal-card-header {
+.journal-feature-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 24px;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
-.journal-card h3 {
+.journal-feature h2 {
     font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 400;
     color: var(--text-primary);
     margin: 0;
@@ -1117,23 +1175,24 @@ footer {
     display: inline-block;
     background: var(--color-bg-cool);
     color: var(--color-primary);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 500;
-    letter-spacing: 0.05em;
-    padding: 6px 16px;
-    border-radius: 20px;
+    letter-spacing: 0.08em;
+    padding: 5px 14px;
+    border-radius: 0;
     border: 1px solid var(--color-primary-light);
     white-space: nowrap;
+    text-transform: uppercase;
 }
 
-.journal-card .journal-subtitle {
+.journal-feature .journal-subtitle {
     font-size: 1.2rem;
     font-style: italic;
     color: var(--text-secondary);
     margin-bottom: 20px;
 }
 
-.journal-card .journal-desc {
+.journal-feature .journal-desc {
     font-size: 1.1rem;
     color: var(--text-primary);
     line-height: 1.7;
@@ -1143,36 +1202,39 @@ footer {
 /* Get Involved Section */
 .get-involved {
     background: #ffffff;
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .get-involved .section-heading {
-    text-align: center;
     font-family: 'DM Serif Display', Georgia, serif;
     font-size: 2.4rem;
     font-weight: 400;
     color: var(--text-primary);
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
 }
 
 .involve-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 7fr 5fr;
     gap: 40px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 30px;
 }
 
 .involve-card {
-    background: #ffffff;
-    border: 1px solid var(--color-border);
+    background: var(--color-bg-cool);
+    border: none;
+    border-top: 2px solid var(--color-primary-light);
     padding: 40px;
-    transition: box-shadow 0.3s ease;
+    transition: border-color 0.3s ease;
 }
 
 .involve-card:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    border-top-color: var(--color-primary);
 }
 
 .involve-card h3 {
@@ -1192,14 +1254,19 @@ footer {
 
 .involve-card a {
     color: var(--color-primary);
-    text-decoration: underline;
-    text-underline-offset: 3px;
+    text-decoration: none;
     font-weight: 400;
+    background-image: linear-gradient(var(--color-primary), var(--color-primary));
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease;
+    padding-bottom: 2px;
 }
 
 .involve-card a:hover {
     color: #043331;
-    text-decoration-thickness: 2px;
+    background-size: 100% 1px;
 }
 
 /* Scroll Animation */
@@ -1368,6 +1435,13 @@ footer {
         text-align: left;
     }
 
+    nav a.active::before,
+    nav a.active::after {
+        display: none;
+    }
+
+
+
     .nav-container {
         padding: 10px 0;
     }
@@ -1409,29 +1483,33 @@ footer {
         padding: 50px 0;
     }
 
-    .how-it-works .section-heading,
-    .current-journals .section-heading,
+    .how-it-works-header .section-heading,
     .get-involved .section-heading {
         font-size: 1.8rem;
     }
 
-    .journal-card {
-        padding: 30px;
+    .how-it-works-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    .journal-card h3 {
-        font-size: 1.5rem;
+    .how-it-works-header .section-heading {
+        position: static;
     }
 
-    .journal-card-header {
+    .journal-feature {
+        margin-left: 0;
+        padding-left: 25px;
+    }
+
+    .journal-feature h2 {
+        font-size: 1.8rem;
+    }
+
+    .journal-feature-header {
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .steps-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        max-width: 100%;
+        gap: 10px;
     }
 
     .involve-grid {
@@ -1478,5 +1556,46 @@ footer {
 
     .hero h2 {
         font-size: 1.8rem;
+    }
+}
+
+/* Micro-interactions */
+.btn-primary {
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.step-item {
+    transition: background 0.3s ease;
+}
+
+.step-item:hover .step-number {
+    color: #043331;
+}
+
+.step-number {
+    transition: color 0.3s ease;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .fade-in-up {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .btn-primary,
+    .involve-card,
+    .involve-card a,
+    .step-number {
+        transition: none;
     }
 }
