@@ -516,6 +516,7 @@ main {
 
 .faq-question::after {
     content: '+';
+    font-family: 'IBM Plex Sans', Arial, sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
     color: var(--text-secondary);
@@ -523,6 +524,8 @@ main {
     margin-left: auto;
     flex-shrink: 0;
     line-height: 1;
+    align-self: flex-start;
+    margin-top: 25px;
 }
 
 .faq-question.active::after {
@@ -859,8 +862,8 @@ footer {
 
     .steps-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
-        max-width: 500px;
+        gap: 30px;
+        max-width: 100%;
     }
 
     .involve-grid {
