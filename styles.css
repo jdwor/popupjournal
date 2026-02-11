@@ -1438,6 +1438,19 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .sponsors-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .sponsor {
+        padding: 25px;
+    }
+
+    .sponsor-website-links {
+        flex-wrap: wrap;
+    }
+
 }
 
 /* Even smaller screens */
